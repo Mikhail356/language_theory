@@ -1,3 +1,4 @@
+! n - matrix size
 ! Calculate solution linaer system Ax=b by Jordan's method
 ! with search by column
 
