@@ -1,10 +1,10 @@
-comment 
+COMMENT 
 n - matrix size
 Calculate solution linaer system Ax=b by Jordan's method
 with search by column 
 Checked on site:
 https://www.jdoodle.com/execute-algol68-online/
-;
+COMMENT
 
 
 PROC residual = (REF [] REAL a, REF [] REAL x, REF [] REAL b, INT n) REAL:
@@ -92,7 +92,9 @@ PROC jordan = (REF [] REAL a, REF [] REAL b, INT n) VOID:
 test:
 (
     REAL answer;
+    print("Write matrix size that greater then 0");
     REF INT n = LOC INT; read(n);
+    print(newline);
     IF (n < 1) THEN 
         print("size should be greater then 0");
         stop
